@@ -29,6 +29,14 @@ public class StudiKasus210 {
             } else {
                 status = "Dokumen tidak lengkap (kurang " + kurang + " dokumen). Dana penghargaan tidak diberikan.";
             }
+        } else if (jenis.equalsIgnoreCase("PKM")) {
+            System.out.print("Apakah Anda lolos pendanaan? (1 = Lolos/0 = Tidak Lolos): ");
+            statusPendanaan = sc.nextInt();
+            if (statusPendanaan == 1) {
+                status = "Selamat! Anda mendapatkan dana penghargaan";
+            } else {
+                status = "Anda tidak mendapatkan dana penghargaan";
+            }
         } else {
             status = "Anda tidak mendapatkan dana penghargaan";
         }
